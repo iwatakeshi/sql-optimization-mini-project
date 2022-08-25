@@ -1,0 +1,12 @@
+services:
+  db:
+    image: '${DOCKER_MYSQL_IMAGE:-mysql:8.0.17}'
+    ports:
+      - '3306:3306'
+    volumes:
+      - db:/var/lib/mysql
+    env_file:
+      - .env
+
+volumes:
+  db: {}
