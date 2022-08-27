@@ -20,13 +20,12 @@
 
 ### 1. Configure Environment Variables
 
-- Create `.env` using the template from `[datebase].example.env`
+- Create `.env` using the template from `.example.env`
+
+*To use a different database such as MariaDB, simply edit the .env.exmaple file and replace the commented out line for `DATABASE_IMAGE`.*
 
 ```bash
-# For MariaDB
-cp maria.env.example .env
-# For MySQL
-cp mysql.env.example .env
+cp .env.example .env
 ```
  
 - Open `.env` and set values for database secrets
