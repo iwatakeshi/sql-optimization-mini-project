@@ -2,21 +2,21 @@ services:
   db:
     image: '${DOCKER_IMAGE:-mysql:8.0.17}'
     ports:
-      - '${PORT}:${PORT}'
+      - '${DATABASE_PORT}:${DATABASE_PORT}'
     volumes:
       - db:/var/lib/mysql
       - ./sql-init:/home/sql-init
       - ./scripts:/home/scripts
     environment:
       - MYSQL_DATABASE=${DATABASE}
-      - MYSQL_ROOT_PASSWORD=${ROOT_PASSWORD}
-      - MYSQL_USER=${USER}
-      - MYSQL_PASSWORD=${PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${DATABSE_ROOT_PASSWORD}
+      - MYSQL_USER=${DATABSE_USER}
+      - MYSQL_PASSWORD=${DATABSE_PASSWORD}
 
       - MARIADB_DATABASE=${DATABASE}
-      - MARIADB_ROOT_PASSWORD=${ROOT_PASSWORD}
-      - MARIADB_USER=${USER}
-      - MARIADB_PASSWORD=${PASSWORD}
+      - MARIADB_ROOT_PASSWORD=${DATABSE_ROOT_PASSWORD}
+      - MARIADB_USER=${DATABSE_USER}
+      - MARIADB_PASSWORD=${DATABSE_PASSWORD}
     env_file:
       - .env
 
