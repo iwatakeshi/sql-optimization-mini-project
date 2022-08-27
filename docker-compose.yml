@@ -4,21 +4,21 @@ services:
     ports:
       - '${DATABASE_PORT}:${DATABASE_PORT}'
     volumes:
-      - db:/var/lib/mysql
+      - ./db:/var/lib/mysql
       - ./sql-init:/home/sql-init
       - ./scripts:/home/scripts
     environment:
       - MYSQL_DATABASE=${DATABASE}
-      - MYSQL_ROOT_PASSWORD=${DATABSE_ROOT_PASSWORD}
-      - MYSQL_USER=${DATABSE_USER}
-      - MYSQL_PASSWORD=${DATABSE_PASSWORD}
+      - MYSQL_ROOT_PASSWORD=${DATABASE_ROOT_PASSWORD}
+      - MYSQL_USER=${DATABASE_USER}
+      - MYSQL_PASSWORD=${DATABASE_PASSWORD}
 
       - MARIADB_DATABASE=${DATABASE}
-      - MARIADB_ROOT_PASSWORD=${DATABSE_ROOT_PASSWORD}
-      - MARIADB_USER=${DATABSE_USER}
-      - MARIADB_PASSWORD=${DATABSE_PASSWORD}
+      - MARIADB_ROOT_PASSWORD=${DATABASE_ROOT_PASSWORD}
+      - MARIADB_USER=${DATABASE_USER}
+      - MARIADB_PASSWORD=${DATABASE_PASSWORD}
     env_file:
-      - .env
+      - ./.env
 
 volumes:
   db: {}
