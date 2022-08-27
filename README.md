@@ -11,6 +11,8 @@
 cp .env.example .env
 ```
 
+- open `.env` and set values for database secrets
+
 - seed the database 
   1. spin up docker compose 
   2. exec into database container 
@@ -27,6 +29,8 @@ docker compose exec -it db /bin/bash
 ```bash
 sh /home/scripts/init.sh
 ```
+
+- look up the password for oor user in  [./docker-compose.yml](./docker-compose.yml)
 
 ## Questions + Solutions
 
