@@ -1,5 +1,5 @@
 
-CREATE OR REPLACE DATABASE springboardopt;
+CREATE DATABASE IF NOT EXISTS springboardopt;
 
 USE springboardopt;
 
