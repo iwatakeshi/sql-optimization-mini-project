@@ -25,8 +25,6 @@ cp .env.example .env
 
 ### 2. spin up and seed db 
 
-![init script](./init.png)
-
 ```bash
 docker compose up -d
 ```
