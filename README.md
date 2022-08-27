@@ -36,8 +36,8 @@ sh /home/scripts/init.sh
 
 ## references
 
-
-
-* [project link](https://www.springboard.com/workshops/data-engineering-career-track/learn#/curriculum/24148)
-* [docker compose example](https://nickjanetakis.com/blog/docker-tip-88-switching-mysql-to-mariadb-for-arm-64-m1-support)
-* [env files with docker compose](https://docs.docker.com/compose/environment-variables/)
+- [project link](https://www.springboard.com/workshops/data-engineering-career-track/learn#/curriculum/24148)
+- [docker compose example](https://nickjanetakis.com/blog/docker-tip-88-switching-mysql-to-mariadb-for-arm-64-m1-support)
+- [env files with docker compose](https://docs.docker.com/compose/environment-variables/)
+- [MySQL's EXPLAIN Demystified](https://www.youtube.com/watch?v=ZoLoIFW1H6g&ab_channel=Percona)
+- [DBeaver Query Execution Plan](https://dbeaver.com/docs/wiki/Query-Execution-Plan/)
