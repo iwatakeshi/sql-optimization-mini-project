@@ -1,1 +1,1 @@
-mysql -u root -p --database springboardopt < "/home/sql-init/populate_data.sql"
+mysql -u oort -p --database springboardopt < "/home/sql-init/populate_data.sql"
