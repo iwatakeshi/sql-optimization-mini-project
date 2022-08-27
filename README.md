@@ -40,7 +40,7 @@ docker compose up -d
 docker compose exec -it db sh /home/scripts/init.sh
 ```
 
-- Look up the password for root user in `.env` file.
+- Look up the password for `user` user in `.env` file.
   
 
 ## Project Teardown
