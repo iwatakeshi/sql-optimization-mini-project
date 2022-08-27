@@ -1,5 +1,3 @@
--- list the name of the student with id equal to v1 (id)
-
 USE springboardopt;
 
 
@@ -14,5 +12,3 @@ SET @v8 = 'MAT';
 
 -- 1. List the name of the student with id equal to v1 (id).
 SELECT name FROM Student WHERE id = @v1;
-q1.sql
-Displaying q1.sql.

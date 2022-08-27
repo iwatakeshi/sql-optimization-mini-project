@@ -1,5 +1,5 @@
 
-CREATE DATABASE springboardopt;
+CREATE OR REPLACE DATABASE springboardopt;
 
 USE springboardopt;
 
@@ -1156,5 +1156,3 @@ SELECT COUNT(*) FROM Professor;
 SELECT COUNT(*) FROM Course;
 SELECT COUNT(*) FROM Teaching;
 SELECT COUNT(*) FROM Transcript;
-populate_data.sql
-Displaying populate_data.sql.

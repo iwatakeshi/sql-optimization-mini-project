@@ -16,5 +16,3 @@ SELECT * FROM Student,
 	AND studId NOT IN
 	(SELECT studId FROM Transcript, Course WHERE deptId = @v7 AND Course.crsCode = Transcript.crsCode)) as alias
 WHERE Student.id = alias.studId;
-q5.sql
-Displaying q5.sql.

@@ -1,4 +1,3 @@
-
 USE springboardopt;
 
 SET @v1 = 1612521;
@@ -12,5 +11,4 @@ SET @v8 = 'MAT';
 
 -- 3. List the names of students who have taken course v4 (crsCode).
 SELECT name FROM Student WHERE id IN (SELECT studId FROM Transcript WHERE crsCode = @v4);
-q3.sql
-Displaying q3.sql.
+
