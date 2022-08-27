@@ -1,6 +1,6 @@
 # SQL Optimization Mini Project
 
-- view [notion page]](https://www.notion.so/bfmcneill/03-sql-optimizer-409b7a9f791646009e4dc3ecd7d1c299)
+- view [notion page](https://www.notion.so/bfmcneill/03-sql-optimizer-409b7a9f791646009e4dc3ecd7d1c299)
 - project code is located [https://github.com/bfmcneill/sql-optimization-mini-project](https://github.com/bfmcneill/sql-optimization-mini-project)
 
 ## spin up maria db instance
