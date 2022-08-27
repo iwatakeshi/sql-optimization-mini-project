@@ -3,13 +3,15 @@
 - view [notion page](https://www.notion.so/bfmcneill/03-sql-optimizer-409b7a9f791646009e4dc3ecd7d1c299)
 - project code is located [https://github.com/bfmcneill/sql-optimization-mini-project](https://github.com/bfmcneill/sql-optimization-mini-project)
 
-## don't forget to tear down project at the end
+## project teardown
 
 ```bash
 docker compose down -v
 ```
 
-## initial setup
+- stop compose services and remove the volume
+
+## project setup
 
 ### 1. configure environment variables
 
@@ -21,20 +23,20 @@ cp .env.example .env
  
 - open `.env` and set values for database secrets
 
-### 2. spin up instance of mysql / mariadb
+### 2. spin up and seed db 
+
+![init script](./init.png)
 
 ```bash
 docker compose up -d
 ```
-
-### 3. seed the database
 
 ```bash
 docker compose exec -it db sh /home/scripts/init.sh
 ```
 
 - look up the password for oort user in `.env` file copied from [.env.template](./.env.example)
-
+  
 ## Questions + Solutions
 
 - all questions in their initial state are located in[sql-questions](./sql-questions/)
