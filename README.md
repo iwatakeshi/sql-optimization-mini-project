@@ -54,7 +54,7 @@ docker compose down -v
 
 ## Questions + Solutions
 
-- All questions in their initial state are located in[sql-questions](./sql-questions/)
+- All questions in their initial state are located in [sql-questions](./sql-questions/)
 - All solutions are located in [sql-solutions](./sql-solutions/)
 
 
